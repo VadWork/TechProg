@@ -27,7 +27,8 @@ jobs:
 
       # Build
       - name: Build
-        run: echo Hello, world!
+        run: echo Build
+          
 
       # Test
       - name: Test
@@ -36,4 +37,4 @@ jobs:
           echo Test2
       # UploadArtifacts
       - name: UploadArtifacts
-        run: Upload Arti!
+        run: echo Upload Arti!
