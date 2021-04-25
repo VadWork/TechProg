@@ -35,7 +35,7 @@ jobs:
           cd 3rdparty
           git clone https://github.com/google/googletest.git -b release-1.10.0
           cd ${{ github.workspace }}/task5
-          cmake ./ -E env GOOGLE_TEST_DIR=googletest/googletest 
+          cmake -E env GOOGLE_TEST_DIR=googletest cmake ./ 
           make
           make install
 
