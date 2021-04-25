@@ -47,7 +47,7 @@ jobs:
           repository: akhtyamovpavel/ActionGtestReport
           path: ./.github/actions/my-test-repo
       - name: Run Test
-        uses: ./.github/actions/my-test-repo/action    
+        uses: ./.github/actions/my-test-repo    
       # UploadArtifacts
       - name: UploadArtifacts
         run: echo Upload Arti!
