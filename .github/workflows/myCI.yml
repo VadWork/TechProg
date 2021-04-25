@@ -45,9 +45,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: akhtyamovpavel/ActionGtestReport
+          tag: v0.0.9
           path: ./.github/actions/my-test-repo
       - name: Run Test
-        uses: ./.github/actions/my-test-repo    
+        uses: ./.github/actions/my-test-repo
+        with:
+          exec-path: ${{ github.workspace }}/task5/bin
+          report-path: ${{ github.workspace }}/task5
+          working-directory: ${{ github.workspace }}
+          time: test-report
       # UploadArtifacts
       - name: UploadArtifacts
         run: echo Upload Arti!
