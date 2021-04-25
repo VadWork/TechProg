@@ -49,7 +49,7 @@ jobs:
       - name: Run Test
         uses: ./.github/actions/my-test-repo
         with:
-          exec-path: ${{ github.workspace }}/task5/bin
+          exec-path: ${{ github.workspace }}/task5/bin/./C
           report-path: ${{ github.workspace }}/task5
           working-directory: ${{ github.workspace }}
       # UploadArtifacts
