@@ -51,7 +51,7 @@ jobs:
         with:
           exec-path: ${{ github.workspace }}/task5/bin/./CTestExe
           report-path: task5_test
-          working-directory: ${{ github.workspace }}/task5/bin/
+          working-directory: task5/bin/
       # UploadArtifacts
       - name: UploadArtifacts
         run: echo Upload Arti!
