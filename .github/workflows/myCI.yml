@@ -54,4 +54,9 @@ jobs:
           working-directory: task5/bin/
       # UploadArtifacts
       - name: UploadArtifacts
-        run: echo Upload Arti!
+        uses: actions/upload-artifact@v2
+        with:
+          name: Distributive
+          path: |
+            ${{ github.workspace }}/task5/build/inst/exe/bin
+            ${{ github.workspace }}/task5/build/inst/exe/lib
