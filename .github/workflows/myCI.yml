@@ -39,13 +39,12 @@ jobs:
           cmake -E env GOOGLE_TEST_DIR=googletest cmake -DCMAKE_INSTALL_PREFIX=inst .. 
           make
           make install
-
       # Test
       - name: Check out repository ActionGtestReport
         uses: actions/checkout@v2
         with:
           repository: akhtyamovpavel/ActionGtestReport
-          tag: v0.0.9
+          ref: v0.0.9
           path: ./.github/actions/my-test-repo
       - name: Run Test
         uses: ./.github/actions/my-test-repo
@@ -53,7 +52,6 @@ jobs:
           exec-path: ${{ github.workspace }}/task5/bin
           report-path: ${{ github.workspace }}/task5
           working-directory: ${{ github.workspace }}
-          time: test-report
       # UploadArtifacts
       - name: UploadArtifacts
         run: echo Upload Arti!
