@@ -41,10 +41,13 @@ jobs:
           make install
 
       # Test
-      - name: Test
-        run: |
-          echo Test1
-          echo Test2
+      - name: Check out repository ActionGtestReport
+        uses: actions/checkout@v2
+        with:
+          repository: https://github.com/akhtyamovpavel/ActionGtestReport
+          path: ./.github/actions/my-test-repo
+      - name: Run Test
+        uses: ./.github/actions/my-test-repo/action    
       # UploadArtifacts
       - name: UploadArtifacts
         run: echo Upload Arti!
