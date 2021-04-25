@@ -44,7 +44,7 @@ jobs:
       - name: Check out repository ActionGtestReport
         uses: actions/checkout@v2
         with:
-          repository: https://github.com/akhtyamovpavel/ActionGtestReport
+          repository: akhtyamovpavel/ActionGtestReport
           path: ./.github/actions/my-test-repo
       - name: Run Test
         uses: ./.github/actions/my-test-repo/action    
