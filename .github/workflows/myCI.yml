@@ -50,7 +50,7 @@ jobs:
         uses: ./.github/actions/my-test-repo
         with:
           exec-path: ${{ github.workspace }}/task5/bin/./C
-          report-path: ${{ github.workspace }}/task5
+          report-path: task5
           working-directory: .
       # UploadArtifacts
       - name: UploadArtifacts
