@@ -37,8 +37,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: google/googletest
+          ref: v1.10.0
           path: ${{ github.workspace }}/task5/3rdparty
-
       # Build
       - name: Build
         run: |
